@@ -1,0 +1,19 @@
+{
+  "name": "vue-course-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ealinn/vue-course-hw.git"
+  },
+  "author": "Olha Tokarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ealinn/vue-course-hw/issues"
+  },
+  "homepage": "https://github.com/Ealinn/vue-course-hw#readme"
+}
