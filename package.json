@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ealinn/vue-course-hw/issues"
   },
-  "homepage": "https://github.com/Ealinn/vue-course-hw#readme"
+  "homepage": "https://github.com/Ealinn/vue-course-hw#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
