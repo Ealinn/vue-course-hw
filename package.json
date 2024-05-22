@@ -1,22 +1,25 @@
 {
-  "name": "vue-course-hw",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ealinn/vue-course-hw.git"
-  },
-  "author": "Olha Tokarenko",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ealinn/vue-course-hw/issues"
-  },
-  "homepage": "https://github.com/Ealinn/vue-course-hw#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+    "name": "vue-course-hw",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ealinn/vue-course-hw.git"
+    },
+    "author": "Olha Tokarenko",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ealinn/vue-course-hw/issues"
+    },
+    "homepage": "https://github.com/Ealinn/vue-course-hw#readme",
+    "dependencies": {
+        "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5"
+    }
 }
