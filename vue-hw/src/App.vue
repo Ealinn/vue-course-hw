@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="logo" alt="Vue logo" src="./assets/logo.png" />
+    <AlertComponent :type="alertType" :text="alertText" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AlertComponent from "./components/AlertComponent.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name: "App",
+    components: {
+        AlertComponent,
+    },
+    data() {
+        return {
+            alertType: "warning",
+            alertText: "What is love?",
+        };
+    },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
 }
 </style>
