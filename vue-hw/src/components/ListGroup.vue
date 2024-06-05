@@ -3,10 +3,10 @@
         <ul class="list-group">
             <li
                 class="list-group-item"
-                v-for="(child, index) in items"
+                v-for="(child, index) in $slots.default()"
                 :key="index"
             >
-                <slot :child="child"></slot>
+                <component :is="child"></component>
             </li>
         </ul>
     </div>

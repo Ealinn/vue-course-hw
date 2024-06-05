@@ -1,9 +1,8 @@
 <template>
     <img class="logo" alt="Vue logo" src="./assets/logo.png" />
-    <ListGroup :items="items">
-        <template v-slot:default="slotProps">
-            <p>{{ slotProps.child }}</p>
-        </template>
+    <ListGroup>
+        <p>one</p>
+        <p>two</p>
     </ListGroup>
 </template>
 
@@ -14,11 +13,6 @@ export default {
     name: "App",
     components: {
         ListGroup,
-    },
-    data() {
-        return {
-            items: ["one", "two"],
-        };
     },
 };
 </script>
