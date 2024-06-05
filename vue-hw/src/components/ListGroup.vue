@@ -15,12 +15,6 @@
 <script>
 export default {
     name: "ListGroup",
-    props: {
-        items: {
-            type: Array,
-            required: true,
-        },
-    },
 };
 </script>
 
