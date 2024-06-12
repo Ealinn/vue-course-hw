@@ -11,15 +11,15 @@ export default {
     components: {
         CarouselComponent,
     },
-    data() {
-        return {
-            images: [
-                "./images/cat1.jpg",
-                "./images/cat2.jpg",
-                "./images/cat3.jpg",
-                "./images/cat4.jpg",
-            ],
-        };
+    computed: {
+        images() {
+            return [
+                require("./assets/images/cat1.jpg"),
+                require("./assets/images/cat2.jpg"),
+                require("./assets/images/cat3.jpg"),
+                require("./assets/images/cat4.jpg"),
+            ];
+        },
     },
 };
 </script>
