@@ -1,7 +1,7 @@
 <template>
-  <div class="d-flex justify-content-center mt-5">
-    <div :class="'alert alert-' + type" role="alert">{{ text }}</div>
-  </div>
+    <div class="d-flex justify-content-center mt-5">
+        <div :class="'alert alert-' + type" role="alert">{{ text }}</div>
+    </div>
 </template>
 
 <script>
@@ -20,6 +20,9 @@ export default {
         text: {
             type: String,
             required: true,
+            validator: function (value) {
+                return value.trim().length > 0;
+            },
         },
     },
 };
@@ -27,7 +30,7 @@ export default {
 
 <style scoped>
 .alert {
-  width: 75%;
-  text-align: left;
+    width: 75%;
+    text-align: left;
 }
 </style>
