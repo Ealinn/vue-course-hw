@@ -1,8 +1,13 @@
 <template>
     <dl class="definitions-list">
-        <template v-for="definition in definitions" :key="definition.id">
-            <dt>{{ definition.dt }}</dt>
-            <dd>{{ definition.dd }}</dd>
+        <template v-if="definitions.length">
+            <template v-for="definition in definitions" :key="definition.id">
+                <dt>{{ definition.dt }}</dt>
+                <dd>{{ definition.dd }}</dd>
+            </template>
+        </template>
+        <template v-else>
+            <p>There are no definitions.</p>
         </template>
     </dl>
 </template>
