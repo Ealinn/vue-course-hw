@@ -34,7 +34,7 @@ export default {
     name: "BtnGroup",
     data() {
         return {
-            isActive: null,
+            isActive: "",
         };
     },
     methods: {
