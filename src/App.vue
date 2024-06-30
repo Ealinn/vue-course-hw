@@ -1,9 +1,9 @@
 <template>
     <el-container>
-        <el-header>TODO APP</el-header>
+        <el-header><h1 class="text-large font-700">TODO APP</h1></el-header>
         <el-main>
             <el-row>
-                <el-col :span="6">
+                <el-col :span="12">
                     <todo-list @setTodoItems="handleSetTodoItems" />
                 </el-col>
             </el-row>
@@ -11,7 +11,7 @@
                 <el-col
                     v-for="(item, index) in todoItems"
                     :span="6"
-                    style="margin-bottom: 20px"
+                    style="margin-bottom: 20px;"
                     :key="item.id"
                 >
                     <el-card>
