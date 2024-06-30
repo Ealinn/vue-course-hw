@@ -10,18 +10,20 @@
             <el-row :gutter="20" style="margin-top: 40px">
                 <el-col
                     v-for="(item, index) in todoItems"
-                    :span="6"
-                    style="margin-bottom: 20px;"
+                    :span="8"
+                    style="margin-bottom: 20px"
                     :key="item.id"
                 >
                     <el-card>
                         <template #header>
                             <div class="card-header">
-                                <b>{{ item.id }}) {{ item.title }}</b>
+                                <b style="word-break: break-all">
+                                    {{ item.id }}. {{ item.title }}</b
+                                >
                             </div>
                         </template>
 
-                        <div class="text item">
+                        <div class="text item" style="word-break: break-all">
                             {{ item.description }}
                         </div>
                         <div style="margin-top: 10px">
