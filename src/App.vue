@@ -7,10 +7,10 @@
                     <todo-list @setTodoItems="handleSetTodoItems" />
                 </el-col>
             </el-row>
-            <el-row gutter="20" style="margin-top: 40px">
+            <el-row :gutter="20" style="margin-top: 40px">
                 <el-col
                     v-for="(item, index) in todoItems"
-                    :span="8"
+                    :span="6"
                     style="margin-bottom: 20px"
                     :key="item.id"
                 >
