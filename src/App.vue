@@ -14,33 +14,7 @@
                     style="margin-bottom: 20px"
                     :key="item.id"
                 >
-                    <el-card>
-                        <template #header>
-                            <div class="card-header">
-                                <b style="word-break: break-all">
-                                    {{ item.id }}. {{ item.title }}</b
-                                >
-                            </div>
-                        </template>
-
-                        <div class="text item" style="word-break: break-all">
-                            {{ item.description }}
-                        </div>
-                        <div style="margin-top: 10px">
-                            Status: <b>{{ item.status }}</b>
-                        </div>
-
-                        <template #footer>
-                            <el-button
-                                type="danger"
-                                round
-                                size="large"
-                                @click="handleRemoveTodoItem(item, index)"
-                            >
-                                Delete
-                            </el-button>
-                        </template>
-                    </el-card>
+                    <todo-card :item="item" :index="index" @remove="handleRemoveTodoItem" />
                 </el-col>
             </el-row>
         </el-main>
@@ -54,10 +28,9 @@ import {
     ElMain,
     ElRow,
     ElCol,
-    ElCard,
 } from "element-plus";
-import { Delete } from "@element-plus/icons-vue";
 import TodoList from "./components/TodoList.vue";
+import TodoCard from "./components/TodoCard.vue";
 import storage from "./functions/LocalStorage.js";
 import { todoStatuses } from "./common/constants.js";
 
@@ -69,7 +42,7 @@ export default {
         ElRow,
         ElCol,
         TodoList,
-        ElCard,
+        TodoCard,
     },
     data() {
         return {
