@@ -5,7 +5,9 @@
             Add new article
         </router-link>
 
-        <div class="row g-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+        <div
+            class="row g-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+        >
             <div class="col" v-for="(article, index) in articles" :key="index">
                 <div class="card border-0 shadow">
                     <div class="card-body">
@@ -17,7 +19,10 @@
                             {{ article.text }}
                         </p>
                         <router-link
-                            :to="'/article/' + index"
+                            :to="{
+                                name: 'articleDetail',
+                                params: { id: index },
+                            }"
                             class="btn btn-outline-primary"
                         >
                             View article
